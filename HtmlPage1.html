@@ -104,7 +104,7 @@
         #news_head {
             color: #ffa100;
             text-align: center;
-            font-size: 4vw;
+            font-size: 40px;
         }
 
         
@@ -132,6 +132,12 @@
                 margin-top: 160px;
             }
         }
+        @media screen and (max-width: 992px) {
+            .margin_top_phones {
+                margin-top: 40px;
+            }
+        }
+
         .container {
             overflow: hidden;
         }
@@ -158,6 +164,17 @@
         .container_full_width{
             width:90%;
         }
+
+        @media screen and (max-width: 992px) {
+            .menu_text {
+                display: none;
+            }
+        }
+        @media screen and (min-width: 992px) {
+            .hamburger_text {
+                display: none;
+            }
+        }
     </style>
 
     <title></title>
@@ -168,14 +185,19 @@
     <nav class="navbar navbar-light bg-light bg-black padding-top-nav">
         <div class="container container_full_width">
             <div class="row">
-                <div class="col-md-2 col-xs-2 centa">
+                <div class="col-xs-2 centa">
                     <a href="https://pl-pl.facebook.com/tspsk/" target="blank"><img src="facebook_icon.png" class="icons_size" /> </a>
                     <a href="https://www.instagram.com/czestochowa_spsk/" target="blank"><img src="instagram_icon.png" class="padding-left-icon icons_size" /></a>
                 </div>
 
-                <div class="col-md-8 col-xs-8">
+                <div class="col-xs-8 centa">
+                    <h4 class="menu_text">
+                        tu macie dodac menu tzn. te 4 funkcje (o szkole , dla uczniow, dla rodzicow, rekrutacja)
+                    </h4>
+
+                    <img src="burger_icon.png" class="hamburger_text" />
                 </div>
-                <div class="col-md-2 col-xs-2 centa">
+                <div class="col-xs-2">
 
                     <img src="phone_icon.png" class="icons_size" />
                 </div>
@@ -206,25 +228,25 @@
 
         </div>
         <div class="row">
-            <div class="col-md-3 col-sm-12 ">
-                <div class="circle-border">
+            <div class="col-md-3 col-sm-6 col-xs-12 ">
+                <div class="circle-border margin_top_phones">
 
                     <img onclick="programmer()" src="fryz.png" class="photo_profession left_circle" />
 
                 </div>
 
             </div>
-            <div class="col-md-3 col-sm-12 margin_top">
+            <div class="col-md-3 col-sm-6 col-xs-12  margin_top margin_top_phones">
                 <div class="circle-border">
                     <img onclick="grafikaaa()" src="graf.png" class="photo_profession" />
                 </div>
             </div>
-            <div class="col-md-3 col-sm-12 margin_top">
+            <div class="col-md-3 col-sm-6 col-xs-12  margin_top margin_top_phones" >
                 <div class="circle-border">
                     <img src="prog.png" class="photo_profession" />
                 </div>
             </div>
-            <div class="col-md-3 col-sm-12">
+            <div class="col-md-3 col-sm-6 col-xs-12 margin_top_phones">
                 <div class="circle-border right_circle">
                     <img src="info.png" class="photo_profession" />
                 </div>
@@ -250,11 +272,11 @@
 
 
         <div class="row">
-
-            <div class="col-md-12 margin_top"><h1 id="news_head">AKTUALNOŚCI</h1></div>
-            <div class="col-md-12 text-white" style="margin-top:60px"><h2>POLSKA TO SZEF</h2></div>
-            <div class="col-md-12 col-sm-12  text-white margin_top"><p>Hamidiye – turecki krążownik pancernopokładowy z początku XX wieku, wodowany w 1903 roku, zbudowany w brytyjskiej stoczni Armstronga. Wyporność normalna okrętu wynosiła 3904 tony, a długość sięgała 112 metrów. Napęd stanowiły maszyny parowe o mocy 12 000 KM, pozwalające na osiąganie maksymalnej prędkości 22 węzły. Artyleria główna składała się z dwóch pojedynczych dział kalibru 152 mm i ośmiu dział kalibru 120 mm. Służył w marynarce Imperium Osmańskiego podczas wojen bałkańskich oraz I wojny światowej, a następnie w marynarce Republiki Turcji do 1947 roku. Wraz z półbliźniaczym „Mecidiye” były jedynymi pełnowartościowymi krążownikami tureckimi przed I wojną światową. Uważany był za najaktywniejszy okręt floty osmańskiej. Zasłynął kilkumiesięcznym rajdem na Morzu Śródziemnym w 1913 roku podczas I wojny bałkańskiej, oprócz tego w czasie tej wojny i I wojny światowej działał głównie na Morzu Czarnym. Wycofany z czynnej służby w 1947 roku, został złomowany w latach 60. Czytaj więcej…</p></div>
-
+            <div class="text-center">
+                <h1 id="news_head">AKTUALNOŚCI</h1>
+                <h2>POLSKA TO SZEF</h2>
+                <p>Hamidiye – turecki krążownik pancernopokładowy z początku XX wieku, wodowany w 1903 roku, zbudowany w brytyjskiej stoczni Armstronga. Wyporność normalna okrętu wynosiła 3904 tony, a długość sięgała 112 metrów. Napęd stanowiły maszyny parowe o mocy 12 000 KM, pozwalające na osiąganie maksymalnej prędkości 22 węzły. Artyleria główna składała się z dwóch pojedynczych dział kalibru 152 mm i ośmiu dział kalibru 120 mm. Służył w marynarce Imperium Osmańskiego podczas wojen bałkańskich oraz I wojny światowej, a następnie w marynarce Republiki Turcji do 1947 roku. Wraz z półbliźniaczym „Mecidiye” były jedynymi pełnowartościowymi krążownikami tureckimi przed I wojną światową. Uważany był za najaktywniejszy okręt floty osmańskiej. Zasłynął kilkumiesięcznym rajdem na Morzu Śródziemnym w 1913 roku podczas I wojny bałkańskiej, oprócz tego w czasie tej wojny i I wojny światowej działał głównie na Morzu Czarnym. Wycofany z czynnej służby w 1947 roku, został złomowany w latach 60. Czytaj więcej…</p>
+            </div>
 
 
             <div class="col-md-6 news">
