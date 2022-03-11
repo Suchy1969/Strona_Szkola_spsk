@@ -107,11 +107,7 @@
             font-size: 4vw;
         }
 
-        .news {
-            background-color: white;
-            height:400px;
-
-        }
+        
 
         .navbar {
             position: fixed;
@@ -146,28 +142,55 @@
             display: none;
         }
 
+        .zdj{
+            width:100%;
+            
+        }
 
+        .float-r{
+            float:right;    
+            margin-right:30px;
+        }
 
+        .float-l {
+            float: left;
+            margin-left: 30px;
+        }
+        .flex-column{
+            display:flex;
+            flex-direction:column;
+        }
 
+        .icons_size{
+            height:30px;
+            margin-left:10px;
 
-
-
-
+        }
+        .container_full_width{
+            width:90%;
+        }
     </style>
 
     <title></title>
 </head>
 <body>
+
+    
     <nav class="navbar navbar-light bg-light bg-black padding-top-nav">
-        <div class="col-md-4  ">
-            <a href="https://pl-pl.facebook.com/tspsk/" target="blank"><img src="facebook_icon.png" class="color_after" /> </a>
-            <a href="https://www.instagram.com/czestochowa_spsk/" target="blank"><img src="instagram_icon.png" class="padding-left-icon" /></a>
-        </div>
-        <div class="col-md-4 centa">
-            <img src="burger_icon.png" />
-        </div>
-        <div class="col-md-4 right">
-            <img src="phone_icon.png" />
+        <div class="container container_full_width">
+            <div class="row">
+                <div class="col-md-2 col-xs-2 centa">
+                    <a href="https://pl-pl.facebook.com/tspsk/" target="blank"><img src="facebook_icon.png" class="icons_size" /> </a>
+                    <a href="https://www.instagram.com/czestochowa_spsk/" target="blank"><img src="instagram_icon.png" class="padding-left-icon icons_size" /></a>
+                </div>
+
+                <div class="col-md-8 col-xs-8">
+                </div>
+                <div class="col-md-2 col-xs-2 centa">
+
+                    <img src="phone_icon.png" class="icons_size" />
+                </div>
+            </div>
         </div>
     </nav>
     <div class="container">
@@ -223,10 +246,6 @@
 
 
         <div id="text" class="row text-white" style="width: 80%; margin: auto; border: 1px solid black; display:none;">
-          
-
-               
-              
 
 
 
@@ -234,7 +253,11 @@
 
 
 
-            </div>
+
+
+
+
+        </div>
 
 
         <div class="row">
@@ -245,8 +268,13 @@
 
 
 
-            <div class="col-md-6 news"> </div>
-            <div class="col-md-6 news"> </div>
+            <div class="col-md-6 news">
+
+                <img src="polskikarnawal.jpg" class="zdj" />
+            </div>
+            <div class="col-md-6 news">
+                <img src="polskikarnawal.jpg" class="zdj" />
+            </div>
 
 
         </div>
@@ -255,9 +283,9 @@
 
 
 
-        
 
-       
+
+
         <script>
             function programmer() {
 
@@ -266,8 +294,8 @@
                 document.getElementById("text").style.fontSize = "3vh";
                 document.getElementById("text").style.padding = "5vh";
                 document.getElementById("text").style.display = "block";
-                
-            } 
+
+            }
 
             function grafikaaa() {
 
@@ -278,9 +306,9 @@
                 document.getElementById("text").style.marginTop = "100px";
                 document.getElementById("text").style.display = "block";
 
-            } 
-               
-                 
+            }
+
+
         </script>
 
 
