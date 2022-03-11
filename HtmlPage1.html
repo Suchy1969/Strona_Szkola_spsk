@@ -34,6 +34,7 @@
           width:250px;
           height:250px;
       }
+     
         .circle-spsk {
             border-radius: 1000px;
             background-color: white;
@@ -41,14 +42,26 @@
            
             height: 310px;
         }
+      
+        .circle-border:hover img {
+            transform-origin: left top;
+            animation: scale 200ms ease-in-out forwards;
+
+        }
+
+        @keyframes scale {
+            to {
+
+                transform: scale(1.1);
+            }
+        }
+        
        .centa{
           display:flex;
           justify-content:center;
        }
-       .margin_top{
-           margin-top:160px;
-
-       }
+       
+    
         .col-md-3 {
             display: flex;
             justify-content: center;
@@ -110,7 +123,18 @@
             margin-top:100px;
             margin-bottom:60px;
         }
-    
+        @media screen and (max-width: 992px) {
+            .z-index {
+                visibility:hidden;
+            }
+        }
+        @media screen and (min-width: 992px) {
+            .margin_top {
+                margin-top: 160px;
+            }
+        }
+
+      
     </style>
     <title></title>
 </head>
@@ -153,9 +177,12 @@
         <div class="row">
             <div class="col-md-3 col-sm-6 ">
                 <div class="circle-border">
+                    
 
-                    <img src="fryz.png" class="photo_profession left_circle"/>
+                    <img src="fryz.png" class="photo_profession left_circle" />
+                   
                 </div>
+                
             </div>
             <div class="col-md-3 col-sm-6 margin_top">
                 <div class="circle-border">
