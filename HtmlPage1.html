@@ -23,127 +23,129 @@
         body {
             background-color: #404140;
         }
-      
-        .bg-light{
-            background-color:white;
-            
+
+        .bg-light {
+            background-color: white;
         }
-      .circle-border{
-          border-radius:1000px;
-          
-          width:250px;
-          height:250px;
-      }
-     
+
+        .circle-border {
+            border-radius: 1000px;
+            width: 250px;
+            height: 250px;
+        }
+
         .circle-spsk {
             border-radius: 1000px;
             background-color: white;
             width: 310px;
-           
             height: 310px;
         }
-      
+
         .circle-border:hover img {
             transform-origin: left top;
             animation: scale 200ms ease-in-out forwards;
-
         }
 
         @keyframes scale {
             to {
-
                 transform: scale(1.1);
             }
         }
-        
-       .centa{
-          display:flex;
-          justify-content:center;
-       }
-       
-    
+
+        .centa {
+            display: flex;
+            justify-content: center;
+        }
+
+
         .col-md-3 {
             display: flex;
             justify-content: center;
         }
-        .text-white{
-            color:white;
-            text-align:center;
+
+        .text-white {
+            color: white;
+            text-align: center;
         }
-        .padding-top-nav{
-            padding-top:10px;
+
+        .padding-top-nav {
+            padding-top: 10px;
         }
+
         .right {
             display: flex;
             justify-content: flex-end;
         }
-        .padding-left-icon{
-            padding-left:5px;
 
+        .padding-left-icon {
+            padding-left: 5px;
         }
+
         .photo_profession {
             width: 250px;
             height: 250px;
-        }   
-   
-      .z-index{
-          z-index:-1;
-          position:absolute;
-          margin-top:30px;
-          
-      }
-      .ssss{
-          width:700px;
-          height:700px;
+        }
 
-      }
-        .row {
-            margin-right: -100px;
-            margin-left: -90px;
+        .z-index {
+            z-index: -1;
+            position: absolute;
+            margin-top: 30px;
         }
+
+        .ssss {
+            width: 700px;
+            height: 700px;
+        }
+
+        
+
         #news_head {
-            color:#ffa100;
-            text-align:center;
-            font-size:4vw;
+            color: #ffa100;
+            text-align: center;
+            font-size: 4vw;
         }
+
         .news {
             background-color: white;
-            height: 350px;
-            width:46%;
-            margin:25px;
-            
+         height:400px;
+
         }
+
         .navbar {
             position: fixed;
             top: 0;
             width: 100%;
-            z-index:2;
+            z-index: 2;
         }
-        .head{
-            margin-top:100px;
-            margin-bottom:60px;
+
+        .head {
+            margin-top: 100px;
+            margin-bottom: 60px;
         }
+
         @media screen and (max-width: 992px) {
             .z-index {
-                visibility:hidden;
+                visibility: hidden;
             }
         }
+
         @media screen and (min-width: 992px) {
             .margin_top {
                 margin-top: 160px;
             }
         }
-
-      
+        .container {
+            overflow: hidden;
+        }
     </style>
     <title></title>
 </head>
-<body >
+<body>
     <nav class="navbar navbar-light bg-light bg-black padding-top-nav">
         <div class="col-md-4  ">
-            <a href="https://pl-pl.facebook.com/tspsk/" target="blank" ><img src="facebook_icon.png" class="color_after" /> </a>
-            <a href="https://www.instagram.com/czestochowa_spsk/" target="blank" ><img  src="instagram_icon.png" class="padding-left-icon" /></a>
-</div>
+            <a href="https://pl-pl.facebook.com/tspsk/" target="blank"><img src="facebook_icon.png" class="color_after" /> </a>
+            <a href="https://www.instagram.com/czestochowa_spsk/" target="blank"><img src="instagram_icon.png" class="padding-left-icon" /></a>
+        </div>
         <div class="col-md-4 centa">
             <img src="burger_icon.png" />
         </div>
@@ -151,8 +153,8 @@
             <img src="phone_icon.png" />
         </div>
     </nav>
-
     <div class="container">
+
         <div class="col-md-12 text-white head">
             <h3>TECHNIKUM STOWARZYSZENIA PRZYJACIÓŁ SZKÓŁ KATOLICKICH W CZĘSTOCHOWIE</h3>
         </div>
@@ -171,30 +173,30 @@
 
 
             </div>
-           
+
 
         </div>
         <div class="row">
-            <div class="col-md-3 col-sm-6 ">
+            <div class="col-md-3 col-sm-12 ">
                 <div class="circle-border">
-                    
+
 
                     <img src="fryz.png" class="photo_profession left_circle" />
-                   
+
                 </div>
-                
+
             </div>
-            <div class="col-md-3 col-sm-6 margin_top">
+            <div class="col-md-3 col-sm-12 margin_top">
                 <div class="circle-border">
                     <img src="graf.png" class="photo_profession" />
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6 margin_top">
+            <div class="col-md-3 col-sm-12 margin_top">
                 <div class="circle-border">
                     <img src="prog.png" class="photo_profession" />
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-12">
                 <div class="circle-border right_circle">
                     <img src="info.png" class="photo_profession" />
                 </div>
@@ -206,16 +208,16 @@
 
             <div class="col-md-12 margin_top"><h1 id="news_head">AKTUALNOŚCI</h1></div>
             <div class="col-md-12 text-white" style="margin-top:60px"><h2>POLSKA TO SZEF</h2></div>
-            <div class="col-md-12 text-white margin_top"><h3>Hamidiye – turecki krążownik pancernopokładowy z początku XX wieku, wodowany w 1903 roku, zbudowany w brytyjskiej stoczni Armstronga. Wyporność normalna okrętu wynosiła 3904 tony, a długość sięgała 112 metrów. Napęd stanowiły maszyny parowe o mocy 12 000 KM, pozwalające na osiąganie maksymalnej prędkości 22 węzły. Artyleria główna składała się z dwóch pojedynczych dział kalibru 152 mm i ośmiu dział kalibru 120 mm. Służył w marynarce Imperium Osmańskiego podczas wojen bałkańskich oraz I wojny światowej, a następnie w marynarce Republiki Turcji do 1947 roku. Wraz z półbliźniaczym „Mecidiye” były jedynymi pełnowartościowymi krążownikami tureckimi przed I wojną światową. Uważany był za najaktywniejszy okręt floty osmańskiej. Zasłynął kilkumiesięcznym rajdem na Morzu Śródziemnym w 1913 roku podczas I wojny bałkańskiej, oprócz tego w czasie tej wojny i I wojny światowej działał głównie na Morzu Czarnym. Wycofany z czynnej służby w 1947 roku, został złomowany w latach 60. Czytaj więcej…</h3></div>
+            <div class="col-md-12 col-sm-12  text-white margin_top"><p>Hamidiye – turecki krążownik pancernopokładowy z początku XX wieku, wodowany w 1903 roku, zbudowany w brytyjskiej stoczni Armstronga. Wyporność normalna okrętu wynosiła 3904 tony, a długość sięgała 112 metrów. Napęd stanowiły maszyny parowe o mocy 12 000 KM, pozwalające na osiąganie maksymalnej prędkości 22 węzły. Artyleria główna składała się z dwóch pojedynczych dział kalibru 152 mm i ośmiu dział kalibru 120 mm. Służył w marynarce Imperium Osmańskiego podczas wojen bałkańskich oraz I wojny światowej, a następnie w marynarce Republiki Turcji do 1947 roku. Wraz z półbliźniaczym „Mecidiye” były jedynymi pełnowartościowymi krążownikami tureckimi przed I wojną światową. Uważany był za najaktywniejszy okręt floty osmańskiej. Zasłynął kilkumiesięcznym rajdem na Morzu Śródziemnym w 1913 roku podczas I wojny bałkańskiej, oprócz tego w czasie tej wojny i I wojny światowej działał głównie na Morzu Czarnym. Wycofany z czynnej służby w 1947 roku, został złomowany w latach 60. Czytaj więcej…</p></div>
 
-            
 
-                <div class="col-md-6 news"> </div>
-                <div class="col-md-6 news"> </div>
 
-            
+            <div class="col-md-6 news"> </div>
+            <div class="col-md-6 news"> </div>
+
+
         </div>
     </div>
-    
+
 </body>
 </html>
