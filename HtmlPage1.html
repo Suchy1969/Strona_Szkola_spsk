@@ -23,7 +23,6 @@
     <style>
         body {
             background-color: #404140;
-            
         }
 
         .bg-light {
@@ -99,7 +98,7 @@
             height: 700px;
         }
 
-        
+
 
         #news_head {
             color: #ffa100;
@@ -107,7 +106,7 @@
             font-size: 40px;
         }
 
-        
+
 
         .navbar {
             position: fixed;
@@ -132,35 +131,36 @@
                 margin-top: 160px;
             }
         }
+
         @media screen and (max-width: 992px) {
             .margin_top_phones {
                 margin-top: 40px;
             }
         }
 
-        
-        #programmer{
-            display:none;
+
+        #programmer {
+            display: none;
         }
+
         #grafika {
             display: none;
         }
 
-        .zdj{
-            width:100%;
-            
+        .zdj {
+            width: 100%;
         }
 
-   
-       
 
-        .icons_size{
-            height:30px;
-            margin-left:10px;
 
+
+        .icons_size {
+            height: 30px;
+            margin-left: 10px;
         }
-        .container_full_width{
-            width:90%;
+
+        .container_full_width {
+            width: 90%;
         }
 
         @media screen and (max-width: 992px) {
@@ -168,19 +168,49 @@
                 display: none;
             }
         }
+
         @media screen and (min-width: 992px) {
             .hamburger_text {
                 display: none;
             }
         }
-        
+
+        .bg-white {
+            background-color: white;
+        }
+        .footer_contatcs{
+            height:180px;
+            width:100%;
+            margin-top:10px;
+        }
+        .footer_content {
+            color: #477dc0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+
+
+        .contact-list {
+            margin: 0;
+            
+        }
+
+            .contact-list li {
+                position: relative;
+                list-style-type: none;
+               
+                margin-bottom: 0.5rem;
+            }
+
+            
+
     </style>
 
     <title></title>
 </head>
 <body>
 
-    
+
     <nav class="navbar navbar-light bg-light bg-black padding-top-nav">
         <div class="container container_full_width">
             <div class="row">
@@ -203,126 +233,127 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <main>
+        <div class="container">
 
-        <div class="col-md-12 text-white head">
-            <h3>TECHNIKUM STOWARZYSZENIA PRZYJACIÓŁ SZKÓŁ KATOLICKICH W CZĘSTOCHOWIE</h3>
-        </div>
-        <div class="row margin_top ">
-
-            <div class="col-xs-12 centa">
-
-
-
-
-                <img src="gif-szkola-logo.gif" class="circle-spsk" />
-
-                <img src="luk.png" class="z-index" />
-
-
-
-
+            <div class="col-md-12 text-white head">
+                <h3>TECHNIKUM STOWARZYSZENIA PRZYJACIÓŁ SZKÓŁ KATOLICKICH W CZĘSTOCHOWIE</h3>
             </div>
+            <div class="row margin_top ">
+
+                <div class="col-xs-12 centa">
 
 
-        </div>
-        <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12 ">
-                <div class="circle-border margin_top_phones">
 
-                    <img onclick="programmer()" src="fryz.png" class="photo_profession left_circle" />
+
+                    <img src="gif-szkola-logo.gif" class="circle-spsk" />
+
+                    <img src="luk.png" class="z-index" />
+
+
+
 
                 </div>
 
+
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12  margin_top margin_top_phones">
-                <div class="circle-border">
-                    <img onclick="grafikaaa()" src="graf.png" class="photo_profession" />
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 ">
+                    <div class="circle-border margin_top_phones">
+
+                        <img onclick="programmer()" src="fryz.png" class="photo_profession left_circle" />
+
+                    </div>
+
                 </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12  margin_top margin_top_phones" >
-                <div class="circle-border">
-                    <img src="prog.png" class="photo_profession" />
+                <div class="col-md-3 col-sm-6 col-xs-12  margin_top margin_top_phones">
+                    <div class="circle-border">
+                        <img onclick="grafikaaa()" src="graf.png" class="photo_profession" />
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 margin_top_phones">
-                <div class="circle-border right_circle">
-                    <img src="info.png" class="photo_profession" />
+                <div class="col-md-3 col-sm-6 col-xs-12  margin_top margin_top_phones">
+                    <div class="circle-border">
+                        <img src="prog.png" class="photo_profession" />
+                    </div>
                 </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 margin_top_phones">
+                    <div class="circle-border right_circle">
+                        <img src="info.png" class="photo_profession" />
+                    </div>
+                </div>
+
             </div>
+
+
+
+            <div id="text" class="row text-white" style="width: 80%; margin: auto; border: 1px solid black; display:none;">
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+            <div class="row">
+                <div class="text-center">
+                    <h1 id="news_head">AKTUALNOŚCI</h1>
+                    <h2>POLSKA TO SZEF</h2>
+                    <p>Hamidiye – turecki krążownik pancernopokładowy z początku XX wieku, wodowany w 1903 roku, zbudowany w brytyjskiej stoczni Armstronga. Wyporność normalna okrętu wynosiła 3904 tony, a długość sięgała 112 metrów. Napęd stanowiły maszyny parowe o mocy 12 000 KM, pozwalające na osiąganie maksymalnej prędkości 22 węzły. Artyleria główna składała się z dwóch pojedynczych dział kalibru 152 mm i ośmiu dział kalibru 120 mm. Służył w marynarce Imperium Osmańskiego podczas wojen bałkańskich oraz I wojny światowej, a następnie w marynarce Republiki Turcji do 1947 roku. Wraz z półbliźniaczym „Mecidiye” były jedynymi pełnowartościowymi krążownikami tureckimi przed I wojną światową. Uważany był za najaktywniejszy okręt floty osmańskiej. Zasłynął kilkumiesięcznym rajdem na Morzu Śródziemnym w 1913 roku podczas I wojny bałkańskiej, oprócz tego w czasie tej wojny i I wojny światowej działał głównie na Morzu Czarnym. Wycofany z czynnej służby w 1947 roku, został złomowany w latach 60. Czytaj więcej…</p>
+                </div>
+
+
+                <div class="col-md-6 news">
+
+                    <img src="polskikarnawal.jpg" class="zdj" />
+                </div>
+                <div class="col-md-6 news">
+                    <img src="polskikarnawal.jpg" class="zdj" />
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
 
         </div>
-
-
-
-        <div id="text" class="row text-white" style="width: 80%; margin: auto; border: 1px solid black; display:none;">
-
-
-
-
-
-
-
-
-
-
-
+    </main>
+    <footer class="bg-white">
+        <div class="footer_contatcs ">
+       <div class="container">
+           <div class="row">
+               <div class="footer_content">
+                   
+                   <ul class="contact-list">
+                       <li>
+                           <h3>Kontakt</h3>
+                       </li>
+                       <li>ul. Stefana Okrzei 41</li>
+                       <li>42-200 Częstochowa</li>
+                       <li>Tel. (34) 323 66 63</li>
+                       <li>techokrzei@wp.pl</li>
+                   </ul>
+               </div>
+           </div>
+       </div>
         </div>
 
-
-        <div class="row">
-            <div class="text-center">
-                <h1 id="news_head">AKTUALNOŚCI</h1>
-                <h2>POLSKA TO SZEF</h2>
-                <p>Hamidiye – turecki krążownik pancernopokładowy z początku XX wieku, wodowany w 1903 roku, zbudowany w brytyjskiej stoczni Armstronga. Wyporność normalna okrętu wynosiła 3904 tony, a długość sięgała 112 metrów. Napęd stanowiły maszyny parowe o mocy 12 000 KM, pozwalające na osiąganie maksymalnej prędkości 22 węzły. Artyleria główna składała się z dwóch pojedynczych dział kalibru 152 mm i ośmiu dział kalibru 120 mm. Służył w marynarce Imperium Osmańskiego podczas wojen bałkańskich oraz I wojny światowej, a następnie w marynarce Republiki Turcji do 1947 roku. Wraz z półbliźniaczym „Mecidiye” były jedynymi pełnowartościowymi krążownikami tureckimi przed I wojną światową. Uważany był za najaktywniejszy okręt floty osmańskiej. Zasłynął kilkumiesięcznym rajdem na Morzu Śródziemnym w 1913 roku podczas I wojny bałkańskiej, oprócz tego w czasie tej wojny i I wojny światowej działał głównie na Morzu Czarnym. Wycofany z czynnej służby w 1947 roku, został złomowany w latach 60. Czytaj więcej…</p>
-            </div>
-
-
-            <div class="col-md-6 news">
-
-                <img src="polskikarnawal.jpg" class="zdj" />
-            </div>
-            <div class="col-md-6 news">
-                <img src="polskikarnawal.jpg" class="zdj" />
-            </div>
-
-
-        </div>
-
-
-
-
-
-
-
-
-        <script>
-            function programmer() {
-
-
-                document.getElementById("text").innerHTML = " Masa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medycznyMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny iMasa ciała jest zbyt niska. Skontaktuj się ze swoim lekarzem, który przeprowadzi wywiad medyczny i i być może zleci  modyfikację diety.";
-                document.getElementById("text").style.fontSize = "3vh";
-                document.getElementById("text").style.padding = "5vh";
-                document.getElementById("text").style.display = "block";
-
-            }
-
-            function grafikaaa() {
-
-
-                document.getElementById("text").innerHTML = "medylekarr się zed medyczny i i być może zleci  modyfikację diety.";
-                document.getElementById("text").style.fontSize = "3vh";
-                document.getElementById("text").style.padding = "5vh";
-                document.getElementById("text").style.marginTop = "100px";
-                document.getElementById("text").style.display = "block";
-
-            }
-
-
-        </script>
-
-
-    </div>
+    </footer>
 
 </body>
+
+
+
+
 </html>
