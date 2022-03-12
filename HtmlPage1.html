@@ -139,20 +139,11 @@
         }
 
 
-        #programmer {
-            display: none;
-        }
-
-        #grafika {
-            display: none;
-        }
 
         .zdj {
             width: 100%;
         }
-
-
-
+     
 
         .icons_size {
             height: 30px;
@@ -190,19 +181,23 @@
 
 
 
-        .contact-list {
+    .contact-list {
             margin: 0;
             
         }
 
-            .contact-list li {
+    .contact-list li {
                 position: relative;
                 list-style-type: none;
                
                 margin-bottom: 0.5rem;
-            }
+     }
 
+        .well {
             
+            background: rgba(26, 26, 26, 0.5);
+        }
+    
 
     </style>
 
@@ -261,14 +256,21 @@
                 <div class="col-md-3 col-sm-6 col-xs-12 ">
                     <div class="circle-border margin_top_phones">
 
-                        <img onclick="programmer()" src="fryz.png" class="photo_profession left_circle" />
 
+
+
+
+                        <a data-bs-toggle="collapse" href="#collapseFryzjerstwo" role="button" >
+                            <img src="fryz.png" class="photo_profession left_circle" />
+                        </a>
                     </div>
 
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12  margin_top margin_top_phones">
                     <div class="circle-border">
-                        <img onclick="grafikaaa()" src="graf.png" class="photo_profession" />
+                        <a data-bs-toggle="collapse" href="#collapseGrafika" role="button">
+                            <img  src="graf.png" class="photo_profession" />
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12  margin_top margin_top_phones">
@@ -286,14 +288,19 @@
 
 
 
-            <div id="text" class="row text-white" style="width: 80%; margin: auto; border: 1px solid black; display:none;">
+            <div id="collapseFryzjerstwo" class="row text-white collapse well" style="margin-top:50px">
+
+                <h1>TECHNIK USŁUG FRYZJERSKICH</h1>
+                <h3 style="margin-top:50px">Ania to chyba fryzjera ale wsm to nwm</h3>
 
 
+                <iframe style="margin-top:50px" width="560" height="315" src="https://www.youtube.com/embed/8lTmWs14MPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+            </div>
 
-
-
+            <div id="collapseGrafika" class="row text-white collapse well" style="margin-top:50px">
+                krążownik pancernopokładowy z początku XX wieku, wodowany w 1903 roku, zbudowany w brytyjskiej stoczni Armstronga. Wyporność nor krążownik pancernopokładowy z początku XX wieku, wodowany w 1903 roku, zbudowany w brytyjskiej stoczni Armstronga. Wyporność nor krążownik pancernopokładowy z początku XX wieku, wodowany w 1903 roku, zbudowany w brytyjskiej stoczni Armstronga. Wyporność nor
 
 
 
@@ -324,9 +331,6 @@
 
 
 
-
-
-
         </div>
     </main>
     <footer class="bg-white">
@@ -351,9 +355,8 @@
 
     </footer>
 
+
+
+
 </body>
-
-
-
-
 </html>
