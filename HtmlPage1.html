@@ -29,6 +29,7 @@
     <style>
         body {
             background-color: #404140;
+            color:white;
         }
 
         .bg-light {
@@ -110,6 +111,7 @@
             color: #ffa100;
             text-align: center;
             font-size: 40px;
+            margin-top:70px;
         }
 
 
@@ -207,10 +209,17 @@
         .container {
             overflow: hidden;
         }
-     .carousel img{
-         width:600px;
-     }
-
+        .carousel-indicators{
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .w-60{
+            width:60%;
+            margin:auto;
+        }
+        .text-black{
+            color:black;
+        }
     </style>
 
     <title></title>
@@ -227,7 +236,7 @@
                 </div>
 
                 <div class="col-8 centa">
-                    <h4 class="menu_text">
+                    <h4 class="menu_text text-black">
                         tu macie dodac menu tzn. te 4 funkcje (o szkole , dla uczniow, dla rodzicow, rekrutacja)
                     </h4>
 
@@ -270,7 +279,7 @@
 
 
 
-                        <a data-bs-toggle="collapse" href="#collapseFryz" role="button">
+                        <a data-bs-toggle="collapse" href="#collapseFryz " role="button">
                             <img src="fryz.png" class="photo_profession left_circle" />
                         </a>
                     </div>
@@ -306,9 +315,14 @@
             <div id="collapseFryz" class="row text-white collapse well" style="margin-top:50px">
                 <div class="col-12">
                     <h1>TECHNIK USŁUG FRYZJERSKICH</h1>
+
+
+                    <h3 style="margin-top:50px">Ania to chyba fryzjera ale wsm to nwm</h3>
+
+
                     <div class="col-12">
 
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide w-60 " data-bs-ride="carousel">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -316,7 +330,7 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="polskikarnawal.jpg" class="d-block w-100" alt="...">
+                                    <img width="400" src="polskikarnawal.jpg" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
                                     <img src="polskikarnawal.jpg" class="d-block w-100" alt="...">
@@ -335,9 +349,6 @@
                             </button>
                         </div>
                     </div>
-                    
-
-                    <h3 style="margin-top:50px">Ania to chyba fryzjera ale wsm to nwm</h3>
 
 
                     <iframe style="margin-top:60px" width="560" height="315" src="https://www.youtube.com/embed/yOVeRahRlDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
