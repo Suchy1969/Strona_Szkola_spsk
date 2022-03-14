@@ -18,7 +18,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="js/carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
@@ -43,7 +49,7 @@
         }
 
         .circle-border:hover img {
-            transform-origin: left top;
+            transform-origin: top;
             animation: scale 200ms ease-in-out forwards;
         }
 
@@ -143,16 +149,14 @@
         .zdj {
             width: 100%;
         }
-     
+
 
         .icons_size {
             height: 30px;
             margin-left: 10px;
         }
 
-        .container_full_width {
-            width: 90%;
-        }
+    
 
         @media screen and (max-width: 992px) {
             .menu_text {
@@ -169,11 +173,13 @@
         .bg-white {
             background-color: white;
         }
-        .footer_contatcs{
-            height:180px;
-            width:100%;
-            margin-top:10px;
+
+        .footer_contatcs {
+            height: 180px;
+            width: 100%;
+            margin-top: 10px;
         }
+
         .footer_content {
             color: #477dc0;
             font-family: 'Roboto', sans-serif;
@@ -181,25 +187,27 @@
 
 
 
-    .contact-list {
+        .contact-list {
             margin: 0;
-            
         }
 
-    .contact-list li {
+            .contact-list li {
                 position: relative;
                 list-style-type: none;
-               
                 margin-bottom: 0.5rem;
-     }
+            }
 
         .well {
-            
-            background:none;
-            border:none
+            background: rgba(26, 26, 26, 0.5);
+            border-top: 3px solid white;
+            border-bottom: 3px solid white;
+            border-left: none;
+            border-right: none;
         }
-    
-      
+
+        .container {
+            overflow: hidden;
+        }
     </style>
 
     <title></title>
@@ -207,22 +215,22 @@
 <body>
 
 
-    <nav class="navbar navbar-light bg-light bg-black padding-top-nav">
-        <div class="container container_full_width">
+    <nav class="navbar bg-light padding-top-nav">
+        <div class="container">
             <div class="row">
-                <div class="col-xs-2 centa">
+                <div class="col-2 centa">
                     <a href="https://pl-pl.facebook.com/tspsk/" target="blank"><img src="facebook_icon.png" class="icons_size" /> </a>
                     <a href="https://www.instagram.com/czestochowa_spsk/" target="blank"><img src="instagram_icon.png" class="padding-left-icon icons_size" /></a>
                 </div>
 
-                <div class="col-xs-8 centa">
+                <div class="col-8 centa">
                     <h4 class="menu_text">
                         tu macie dodac menu tzn. te 4 funkcje (o szkole , dla uczniow, dla rodzicow, rekrutacja)
                     </h4>
 
                     <img src="burger_icon.png" class="hamburger_text" />
                 </div>
-                <div class="col-xs-2">
+                <div class="col-2">
 
                     <img src="phone_icon.png" class="icons_size" />
                 </div>
@@ -232,7 +240,7 @@
     <main>
         <div class="container">
 
-            <div class="col-md-12 text-white head">
+            <div class="col-xs-12 text-white head">
                 <h3>TECHNIKUM STOWARZYSZENIA PRZYJACIÓŁ SZKÓŁ KATOLICKICH W CZĘSTOCHOWIE</h3>
             </div>
             <div class="row margin_top ">
@@ -254,7 +262,7 @@
 
             </div>
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12 ">
+                <div class="col-xs-12 col-sm-6  col-md-3  ">
                     <div class="circle-border margin_top_phones">
 
 
@@ -265,14 +273,14 @@
                     </div>
 
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12  margin_top margin_top_phones">
+                <div class="col-xs-12 col-sm-6  col-md-3 margin_top margin_top_phones">
                     <div class="circle-border">
                         <a data-bs-toggle="collapse" href="#collapseGraf" role="button">
                             <img src="graf.png" class="photo_profession" />
                         </a>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12  margin_top margin_top_phones">
+                <div class="col-xs-12 col-sm-6  col-md-3  margin_top margin_top_phones">
                     <div class="circle-border">
                         <a data-bs-toggle="collapse" href="#collapseProg" role="button">
                             <img src="prog.png" class="photo_profession" />
@@ -280,7 +288,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 margin_top_phones">
+                <div class="col-xs-12 col-sm-6  col-md-3 margin_top_phones">
                     <div class="circle-border right_circle">
                         <a data-bs-toggle="collapse" href="#collapseInf" role="button">
                             <img src="info.png" class="photo_profession" />
@@ -293,13 +301,13 @@
 
 
             <div id="collapseFryz" class="row text-white collapse well" style="margin-top:50px">
+                <div class="col-xs-12">
+                    <h1>TECHNIK USŁUG FRYZJERSKICH</h1>
+                    <h3 style="margin-top:50px">Ania to chyba fryzjera ale wsm to nwm</h3>
 
-                <h1>TECHNIK USŁUG FRYZJERSKICH</h1>
-                <h3 style="margin-top:50px">Ania to chyba fryzjera ale wsm to nwm</h3>
 
-
-                <iframe style="margin-top:60px" width="560" height="315" src="https://www.youtube.com/embed/yOVeRahRlDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+                    <iframe style="margin-top:60px" width="560" height="315" src="https://www.youtube.com/embed/yOVeRahRlDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
 
             <div id="collapseGraf" class="row text-white collapse well" style="margin-top:50px">
@@ -370,7 +378,7 @@
         <div class="footer_contatcs ">
        <div class="container">
            <div class="row">
-               <div class="footer_content">
+               <div class="footer_content col-12">
                    
                    <ul class="contact-list">
                        <li>
