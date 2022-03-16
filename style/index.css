@@ -166,17 +166,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
-
 .contact-list {
     margin: 0;
 }
 
-    .contact-list li {
-        position: relative;
-        list-style-type: none;
-        margin-bottom: 0.5rem;
-    }
+.contact-list li {
+    position: relative;
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+}
 
 .well {
     background: none;
