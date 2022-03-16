@@ -14,204 +14,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
-            background-color: #404140;
-            color: white;
-        }
+    background-color: #404140;
+    color: white;
+}
 
-        .bg-light {
-            background-color: white;
-        }
+.bg-light {
+    background-color: white;
+}
 
-        .circle-border {
-            border-radius: 1000px;
-            width: 250px;
-            height: 250px;
-        }
+.circle-border {
+    border-radius: 1000px;
+    width: 250px;
+    height: 250px;
+}
 
-        .circle-spsk {
-            border-radius: 1000px;
-            background-color: white;
-            width: 310px;
-            height: 310px;
-        }
+.circle-spsk {
+    border-radius: 1000px;
+    background-color: white;
+    width: 310px;
+    height: 310px;
+}
 
-        .circle-border:hover img {
-            transform-origin: top;
-            animation: scale 200ms ease-in-out forwards;
-        }
+.circle-border:hover img {
+    transform-origin: top;
+    animation: scale 200ms ease-in-out forwards;
+}
 
-        @keyframes scale {
-            to {
-                transform: scale(1.1);
-            }
-        }
+@keyframes scale {
+    to {
+        transform: scale(1.1);
+    }
+}
 
-        .centa {
-            display: flex;
-            justify-content: center;
-        }
-
-
-        .col-md-3 {
-            display: flex;
-            justify-content: center;
-        }
-
-        .text-white {
-            color: white;
-            text-align: center;
-        }
-
-        .padding-top-nav {
-            padding-top: 10px;
-        }
-
-        .right {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .padding-left-icon {
-            padding-left: 5px;
-        }
-
-        .photo_profession {
-            width: 250px;
-            height: 250px;
-        }
-
-        .z-index {
-            z-index: -1;
-            position: absolute;
-            margin-top: 30px;
-        }
-
-        .ssss {
-            width: 700px;
-            height: 700px;
-        }
+.centa {
+    display: flex;
+    justify-content: center;
+}
 
 
+.col-md-3 {
+    display: flex;
+    justify-content: center;
+}
 
-        #news_head {
-            color: #ffa100;
-            text-align: center;
-            font-size: 40px;
-            margin-top: 70px;
-        }
+.text-white {
+    color: white;
+    text-align: center;
+}
+
+.padding-top-nav {
+    padding-top: 10px;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.padding-left-icon {
+    padding-left: 5px;
+}
+
+.photo_profession {
+    width: 250px;
+    height: 250px;
+}
+
+.z-index {
+    z-index: -1;
+    position: absolute;
+    margin-top: 30px;
+}
+
+.ssss {
+    width: 700px;
+    height: 700px;
+}
 
 
 
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 2;
-        }
-
-        .head {
-            margin-top: 100px;
-            margin-bottom: 60px;
-        }
-
-        @media screen and (max-width: 992px) {
-            .z-index {
-                visibility: hidden;
-            }
-        }
-
-        @media screen and (min-width: 992px) {
-            .margin_top {
-                margin-top: 160px;
-            }
-        }
-
-        @media screen and (max-width: 992px) {
-            .margin_top_phones {
-                margin-top: 40px;
-            }
-        }
+#news_head {
+    color: #ffa100;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 70px;
+}
 
 
 
-        .zdj {
-            width: 100%;
-        }
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
 
+.head {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
 
-        .icons_size {
-            height: 30px;
-            margin-left: 10px;
-        }
+@media screen and (max-width: 992px) {
+    .z-index {
+        visibility: hidden;
+    }
+}
 
+@media screen and (min-width: 992px) {
+    .margin_top {
+        margin-top: 160px;
+    }
+}
 
-
-        @media screen and (max-width: 992px) {
-            .menu_text {
-                display: none;
-            }
-        }
-
-        @media screen and (min-width: 992px) {
-            .hamburger_text {
-                display: none;
-            }
-        }
-
-        .bg-white {
-            background-color: white;
-        }
-
-        .footer_contatcs {
-            margin-top: 10px;
-        }
-
-        .footer_content {
-            color: #477dc0;
-            font-family: 'Roboto', sans-serif;
-        }
+@media screen and (max-width: 992px) {
+    .margin_top_phones {
+        margin-top: 40px;
+    }
+}
 
 
 
-        .contact-list {
-            margin: 0;
-        }
+.zdj {
+    width: 100%;
+}
 
-            .contact-list li {
-                position: relative;
-                list-style-type: none;
-                margin-bottom: 0.5rem;
-            }
 
-        .well {
-            background:none;
-            border:none;
-            border-bottom: 3px solid white;
-           
-        }
+.icons_size {
+    height: 30px;
+    margin-left: 10px;
+}
 
-        .container {
-            overflow: hidden;
-        }
 
-        .carousel-indicators {
-            margin-left: auto;
-            margin-right: auto;
-        }
 
-        .w-60 {
-            width: 60%;
-            margin: auto;
-        }
+@media screen and (max-width: 992px) {
+    .menu_text {
+        display: none;
+    }
 
-        .text-black {
-            color: black;
-        }
-        .head_info{
-            margin-top:60px;
-            color:green;
-            font-size:3vw;
-        }
+    .w-60 {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hamburger_text {
+        display: none;
+    }
+
+    .w-60 {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.footer_contatcs {
+    margin-top: 10px;
+}
+
+.footer_content {
+    color: #477dc0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.contact-list {
+    margin: 0;
+}
+
+    .contact-list li {
+        position: relative;
+        list-style-type: none;
+        margin-bottom: 0.5rem;
+    }
+
+.well {
+    background: none;
+    border: none;
+    border-bottom: 3px solid white;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.carousel-indicators {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.text-black {
+    color: black;
+}
+
+.head_info {
+    margin-top: 60px;
+    color: green;
+    font-size: 3vw;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+}
+
     </style>
 
     <title></title>
