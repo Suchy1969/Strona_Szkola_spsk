@@ -113,7 +113,7 @@
     <Content Include="fryz.png" />
     <Content Include="gif-szkola-logo.gif" />
     <Content Include="graf.png" />
-    <Content Include="HtmlPage1.html" />
+    <Content Include="index.html" />
     <Content Include="info.png" />
     <Content Include="instagram_icon.png" />
     <Content Include="logo_spsk.png" />
@@ -126,6 +126,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="sss.svg" />
+    <Content Include="style\index.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
