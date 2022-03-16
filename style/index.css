@@ -99,24 +99,45 @@
     margin-bottom: 60px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
     .z-index {
         visibility: hidden;
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1201px) {
     .margin_top {
         margin-top: 160px;
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
     .margin_top_phones {
         margin-top: 40px;
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .menu_text {
+        display: none;
+    }
+
+    .w-60 {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .hamburger_text {
+        display: none;
+    }
+
+    .w-60 {
+        width: 60%;
+        margin: auto;
+    }
+}
 
 
 .zdj {
@@ -131,27 +152,7 @@
 
 
 
-@media screen and (max-width: 992px) {
-    .menu_text {
-        display: none;
-    }
 
-    .w-60 {
-        width: 100%;
-        margin: auto;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .hamburger_text {
-        display: none;
-    }
-
-    .w-60 {
-        width: 60%;
-        margin: auto;
-    }
-}
 
 .bg-white {
     background-color: white;
