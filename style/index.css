@@ -4,14 +4,12 @@
 }
 
 nav {
-    display: flex;
-    align-items: center;
-
-    position: relative;
-    height: 56px;
+    display: grid;
+    grid-template: 48px max-content / 10% 1fr 10%;
 
     color: black;
     background-color: white;
+    box-shadow: 0px 0px 30px 15px rgba(0,0,0,0.5);
 }
 
 nav a, nav a:hover {
@@ -19,66 +17,68 @@ nav a, nav a:hover {
     text-decoration: none;
 }
 
-.nav-social, .nav-contact {
-    display: flex;
+.nav-social {
+    grid-area: 1 / 1 / 2 / 2;
 
-    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-menu {
+    grid-area: 1 / 2 / 2 / 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 32px;
+}
+
+.nav-contact {
+    grid-area: 1 / 3 / 2 / 4;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .nav-social a, .nav-contact a {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    width: 48px;
+    height: 48px;
 }
 
-.nav-social {
-    justify-content: flex-end;
-}
 
 .nav-social > *:not(:first-child), .nav-contact > *:not(:first-child) {
     margin-left: 8px;
 }
 
-.nav-contact {
-    justify-content: flex-start;
-}
-
-.nav-menu {
-    display: flex;
-    justify-content: center;
-
-    width: 100%;
-    font-size: 32px;
-}
-
 .nav-menu a:hover {
-    color: rgb(72, 72, 72);
+    color: #484848;
     cursor: pointer;
 }
 
 .nav-menu-burger {
     display: none;
+    align-items: center;
 
     cursor: pointer;
-
-    height: 50px;
-    width: 50px;
 }
 
-.nav-menu-burger:hover ~ .nav-menu-element-wrapper, .nav-menu-burger:active ~ .nav-menu-element-wrapper{
+.nav-menu-burger:hover ~ .nav-menu, .nav-menu-burger:active ~ .nav-menu, .nav-menu:hover, .nav-menu:active{
     display: flex;
 }
 
-.nav-menu-element-wrapper {
+.nav-menu-element {
     display: flex;
-    justify-content: space-evenly;
-    min-width: 50%;
-}
+    justify-content: center;
 
-.nav-menu .nav-menu-element {
     margin: 0 16px;
 }
-
 .bg-light {
     background-color: white;
 }
@@ -147,8 +147,6 @@ nav a, nav a:hover {
     height: 700px;
 }
 
-
-
 #news_head {
     color: #ffa100;
     text-align: center;
@@ -170,22 +168,12 @@ nav a, nav a:hover {
 
 @media screen and (max-width: 1200px) {
     nav {
-        height: 80px;
-    }
-
-    nav a, nav-menu-burger {
-        width: 50px;
-        height: 50px;
+        grid-template: 48px max-content / 1fr 120px 1fr;
+        grid-column-gap: 24px;
     }
 
     .nav-social, .nav-contact {
         justify-content: center;
-
-        min-width: 120px;
-    }
-
-    .nav-menu {
-        background-image: src("../burger_icon.png");
     }
 
     .nav-menu-burger {
@@ -194,15 +182,19 @@ nav a, nav a:hover {
         align-items: center;
     }
 
-    .nav-menu-element-wrapper {
+    .nav-menu {
+        grid-area: 2 / 1 / 3 / 4;
+
         display: none;
         flex-direction: column;
+    }
 
-        position: absolute;
-        bottom: -200px;
+    .nav-menu-element {
+        width: 100%;
+    }
 
-        background-color: white;
-        font-size: 8px;
+    .nav-menu a:hover {
+        background-color: #f2f2f2;
     }
 
     .w-60 {
