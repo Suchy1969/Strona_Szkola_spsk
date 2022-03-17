@@ -17,18 +17,23 @@
 </head>
 <body>
     <nav>
-        <div>
-            <a href="https://pl-pl.facebook.com/tspsk/" target="blank"><img src="facebook_icon.png" /> </a>
+        <div class="nav-social">
+            <a href="https://pl-pl.facebook.com/tspsk/" target="blank"><img src="facebook_icon.png" /></a>
             <a href="https://www.instagram.com/czestochowa_spsk/" target="blank"><img src="instagram_icon.png" /></a>
         </div>
-        <div>
-            <div class="menu-element">O szkole</div>
-            <div class="menu-element">Dla uczniów</div>
-            <div class="menu-element">Dla rodziców</div>
-            <div class="menu-element">Rekrutacja</div>
+        <div class="nav-menu">
+            <div class="nav-menu-burger"> 
+                <img src="burger_icon.png" />
+            </div>
+            <div class="nav-menu-element-wrapper">
+                <a class="nav-menu-element">O SZKOLE</a>
+                <a class="nav-menu-element">DLA UCZNIÓW</a>
+                <a class="nav-menu-element">DLA RODZICÓW</a>
+                <a class="nav-menu-element">REKRUTACJA</a>
+            </div>
         </div>
-        <div>
-            <img src="phone_icon.png" class="icons_size" />
+        <div class="nav-contact">
+            <a href="#contact-list"><img src="phone_icon.png" /></a>
         </div>
     </nav>
     <main>
@@ -245,7 +250,7 @@
             <div class="container">
                 <div class="row">
                     <div class="footer_content col-12">
-                        <ul class="contact-list">
+                        <ul id="contact-list" class="contact-list">
                             <li>
                                 <h3>Kontakt</h3>
                             </li>

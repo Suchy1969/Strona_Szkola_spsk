@@ -4,15 +4,79 @@
 }
 
 nav {
-    height: 100px;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    height: 56px;
+
+    color: black;
+    background-color: white;
 }
 
-.menu {
-
+nav a, nav a:hover {
+    color: black;
+    text-decoration: none;
 }
 
-.menu .menu-element {
+.nav-social, .nav-contact {
+    display: flex;
 
+    width: 10%;
+}
+
+.nav-social a, .nav-contact a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-social {
+    justify-content: flex-end;
+}
+
+.nav-social > *:not(:first-child), .nav-contact > *:not(:first-child) {
+    margin-left: 8px;
+}
+
+.nav-contact {
+    justify-content: flex-start;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    font-size: 32px;
+}
+
+.nav-menu a:hover {
+    color: rgb(72, 72, 72);
+    cursor: pointer;
+}
+
+.nav-menu-burger {
+    display: none;
+
+    cursor: pointer;
+
+    height: 50px;
+    width: 50px;
+}
+
+.nav-menu-burger:hover ~ .nav-menu-element-wrapper, .nav-menu-burger:active ~ .nav-menu-element-wrapper{
+    display: flex;
+}
+
+.nav-menu-element-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 50%;
+}
+
+.nav-menu .nav-menu-element {
+    margin: 0 16px;
 }
 
 .bg-light {
@@ -105,42 +169,64 @@ nav {
 }
 
 @media screen and (max-width: 1200px) {
-    .z-index {
-        visibility: hidden;
+    nav {
+        height: 80px;
     }
-}
 
-@media screen and (min-width: 1201px) {
-    .margin_top {
-        margin-top: 160px;
+    nav a, nav-menu-burger {
+        width: 50px;
+        height: 50px;
     }
-}
 
-@media screen and (max-width: 1200px) {
-    .margin_top_phones {
-        margin-top: 40px;
+    .nav-social, .nav-contact {
+        justify-content: center;
+
+        min-width: 120px;
     }
-}
 
-@media screen and (max-width: 1200px) {
-    .menu_text {
+    .nav-menu {
+        background-image: src("../burger_icon.png");
+    }
+
+    .nav-menu-burger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-menu-element-wrapper {
         display: none;
+        flex-direction: column;
+
+        position: absolute;
+        bottom: -200px;
+
+        background-color: white;
+        font-size: 8px;
     }
 
     .w-60 {
         width: 100%;
         margin: auto;
     }
+
+    .z-index {
+        visibility: hidden;
+    }
+
+    .margin_top_phones {
+        margin-top: 40px;
+    }
 }
 
 @media screen and (min-width: 1201px) {
-    .hamburger_text {
-        display: none;
-    }
-
     .w-60 {
         width: 60%;
         margin: auto;
+    }
+
+    .margin_top {
+        margin-top: 160px;
     }
 }
 
