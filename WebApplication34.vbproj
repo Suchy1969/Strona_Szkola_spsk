@@ -110,6 +110,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="cross.png" />
     <Content Include="facebook_icon.png" />
     <Content Include="fryz.png" />
     <Content Include="gif-szkola-logo.gif" />
