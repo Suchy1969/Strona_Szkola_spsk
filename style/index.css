@@ -171,7 +171,10 @@ nav a, nav a:hover {
         grid-template: 48px max-content / 1fr 120px 1fr;
         grid-column-gap: 24px;
     }
-
+    .w-60-max {
+        width: 60%;
+     
+    }
     .nav-social, .nav-contact {
         justify-content: center;
     }
@@ -237,8 +240,9 @@ nav a, nav a:hover {
 }
 
 .footer_content {
-    color: #477dc0;
+    color: black;
     font-family: 'Roboto', sans-serif;
+    font-size:15px; 
 }
 
 .contact-list {
@@ -281,4 +285,10 @@ nav a, nav a:hover {
 .flex_center {
     display: flex;
     justify-content: center;
+}
+.padding-footer{
+    padding:20px;
+}
+.float-right{
+    float:right;
 }
