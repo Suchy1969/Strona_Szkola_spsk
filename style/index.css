@@ -6,6 +6,10 @@
 nav {
     display: grid;
     grid-template: 48px max-content / 10% 1fr 10%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
     color: black;
     background-color: white;
     box-shadow: 0px 0px 30px 15px rgba(0,0,0,0.5);
@@ -87,14 +91,15 @@ nav {
     }
 
     .circle-border svg {
-        position: absolute;
-        top: 0;
-        left: 0;
         overflow: visible;
-        z-index: -1;
+        pointer-events: none;
         font-size: 16px;
         fill: white;
         cursor: default;
+    }
+
+    .circle-border a img {
+        margin-top: -108%;
     }
 
 .circle-spsk {
