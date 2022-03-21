@@ -162,7 +162,10 @@ nav {
     font-size: 40px;
     margin-top: 70px;
 }
-
+.collab{
+    display:flex;
+    justify-content:center;
+}
 .navbar {
     position: fixed;
     top: 0;
@@ -245,7 +248,9 @@ nav {
 .zdj {
     width: 100%;
 }
-
+.zdj_wsp {
+    width: 65%;
+}
 
 .bg-white {
     background-color: white;
