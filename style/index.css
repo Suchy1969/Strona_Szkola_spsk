@@ -2,7 +2,9 @@
     background-color: #404140;
     color: white;
 }
-
+.container {
+    overflow:hidden;
+}
 nav {
     display: grid;
     grid-template: 48px max-content / 10% 1fr 10%;
@@ -224,7 +226,7 @@ nav {
     }
 
     .margin_top_phones {
-        margin-top: 40px;
+        margin-top: 100px;
     }
 }
 
@@ -272,7 +274,7 @@ nav {
 .well {
     background: none;
     border: none;
-    border-bottom: 3px solid white;
+    border-bottom: 1px solid white;
 }
 
 .carousel-indicators {

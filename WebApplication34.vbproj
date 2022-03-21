@@ -130,6 +130,7 @@
     <Content Include="sss.svg" />
     <Content Include="style\index.css" />
     <Content Include="Web.config" />
+    <Content Include="x-icons.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />
