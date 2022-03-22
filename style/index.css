@@ -2,9 +2,11 @@
     background-color: #404140;
     color: white;
 }
+
 .container {
-    overflow:hidden;
+    overflow: hidden;
 }
+
 nav {
     display: grid;
     grid-template: 48px max-content / 10% 1fr 10%;
@@ -100,9 +102,13 @@ nav {
         cursor: default;
     }
 
-    .circle-border a img {
+    .circle-border img {
         margin-top: -108%;
     }
+
+.clickable {
+    cursor: pointer;
+}
 
 .circle-spsk {
     border-radius: 1000px;
@@ -162,10 +168,12 @@ nav {
     font-size: 40px;
     margin-top: 70px;
 }
-.collab{
-    display:flex;
-    justify-content:center;
+
+.collab {
+    display: flex;
+    justify-content: center;
 }
+
 .navbar {
     position: fixed;
     top: 0;
@@ -248,6 +256,7 @@ nav {
 .zdj {
     width: 100%;
 }
+
 .zdj_wsp {
     width: 65%;
 }

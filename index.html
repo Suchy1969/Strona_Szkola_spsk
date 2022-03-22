@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <link href="style/index.css" rel="stylesheet" />
+    <script src="Scripts/toggle_profession_description.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
 </head>
@@ -60,9 +61,7 @@
                                 </textPath>
                             </text>
                         </svg>
-                        <a data-bs-toggle="collapse" href="#collapseFryzjerstwo" role="button">
-                            <img src="assets/kierunki/fryzjerstwo.png" class="photo_profession left_circle" alt="fryzjerstwo" />
-                        </a>
+                        <img src="assets/kierunki/fryzjerstwo.png" class="photo_profession left_circle clickable" onclick="toggle_profession_description('fryzjerstwo')" alt="fryzjerstwo" />
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6  col-md-6 col-lg-3 margin_top margin_top_phones flex_center">
@@ -74,9 +73,7 @@
                                 </textPath>
                             </text>
                         </svg>
-                        <a data-bs-toggle="collapse" href="#collapseGrafika" role="button">
-                            <img src="assets/kierunki/grafika.png" class="photo_profession" alt="grafik" />
-                        </a>
+                        <img src="assets/kierunki/grafika.png" class="photo_profession clickable" onclick="toggle_profession_description('grafika')" alt="grafik" />
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6  col-md-6 col-lg-3  margin_top margin_top_phones flex_center">
@@ -88,9 +85,7 @@
                                 </textPath>
                             </text>
                         </svg>
-                        <a data-bs-toggle="collapse" href="#collapseProgramowanie" role="button">
-                            <img src="assets/kierunki/programowanie.png" class="photo_profession" alt="programowanie" />
-                        </a>
+                        <img src="assets/kierunki/programowanie.png" class="photo_profession clickable" onclick="toggle_profession_description('programowanie')" alt="programowanie" />
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6  col-md-6 col-lg-3 margin_top_phones flex_center">
@@ -102,13 +97,11 @@
                                 </textPath>
                             </text>
                         </svg>
-                        <a data-bs-toggle="collapse" href="#collapseInformatyka" role="button">
-                            <img src="assets/kierunki/informatyka.png" class="photo_profession" alt="informatyka" />
-                        </a>
+                        <img src="assets/kierunki/informatyka.png" class="photo_profession clickable" onclick="toggle_profession_description('informatyka')" alt="informatyka" />
                     </div>
                 </div>
             </div>
-            <div id="collapseFryzjerstwo" class="row text-white collapse well" style="margin-top:50px">
+            <div id="fryzjerstwo" class="profession row text-white collapse well" style="margin-top:50px">
                 <div class="col-12">
                     <h1>TECHNIK USŁUG FRYZJERSKICH</h1>
                     <h3 style="margin-top:50px">
@@ -144,14 +137,12 @@
                         </div>
                     </div>
                     <iframe style="margin-top:60px" width="560" height="315" src="https://www.youtube.com/embed/yOVeRahRlDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="col-12 ">
-                        <a data-bs-toggle="collapse" href="#collapseFryzjerstwo" role="button">
-                            <img class=" margin_top " src="assets\icons\x-icons.png" height="40" width="40" />
-                        </a>
+                    <div class="col-12">
+                        <img class="margin_top clickable" src="assets\icons\x-icons.png" height="40" width="40" onclick="toggle_profession_description('fryzjerstwo')" />
                     </div>
                 </div>
             </div>
-            <div id="collapseGrafika" class="row text-white collapse well" style="margin-top:50px">
+            <div id="grafika collapseGrafika" class="profession row text-white collapse well" style="margin-top:50px">
                 <div class="col-12">
                     <h1>TECHNIK GRAFIKI I POLIGRAII CYFROWEJ</h1>
                     <h3 style="margin-top:50px">
@@ -195,9 +186,12 @@
                         </div>
                     </div>
                     <iframe style="margin-top:60px" width="560" height="315" src="https://www.youtube.com/embed/5E-X5QlKp1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="col-12">
+                        <img class="margin_top clickable" src="assets\icons\x-icons.png" height="40" width="40" onclick="toggle_profession_description('grafika')" />
+                    </div>
                 </div>
             </div>
-            <div id="collapseProgramowanie" class="row text-white collapse well" style="margin-top:50px">
+            <div id="programowanie collapseProgramowanie" class="profession row text-white collapse well" style="margin-top:50px">
                 <div class="col-12">
                     <h1>TECHNIK PROGRAMISTA</h1>
                     <h3 style="margin-top:50px">
@@ -235,16 +229,15 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-
-                        
                     </div>
-                 
                     <iframe style="margin-top:60px" width="560" height="315" src="https://www.youtube.com/embed/Xzr5hYiClUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="col-12">
+                        <img class="margin_top clickable" src="assets\icons\x-icons.png" height="40" width="40" onclick="toggle_profession_description('programowanie')" />
+                    </div>
                 </div>
             </div>
-            <div id="collapseInformatyka" class="row text-white collapse well" style="margin-top:50px">
+            <div id="informatyka collapseInformatyka" class="profession row text-white collapse well" style="margin-top:50px">
                 <div class="col-12">
-
                     <h1>TECHNIK INFORMATYK</h1>
                     <h3 style="margin-top:50px">
                         Hamidiye – turecki krążownik pancernopokładowy z początku XX wieku, wodowany w 1903 roku, zbudowany w brytyjskiej stoczni Armstronga. Wyporność normalna okrętu wynosiła 3904 tony, a długość sięgała 112 metrów. Napęd stanowiły maszyny parowe o mocy 12 000 KM, pozwalające na osiąganie maksymalnej prędkości 22 węzły. Artyleria główna składała się z dwóch pojedynczych dział kalibru 152 mm i ośmiu dział kalibru 120 mm. Służył w marynarce Imperium Osmańskiego podczas wojen bałkańskich oraz I wojny światowej, a następnie w marynarce Republiki Turcji do 1947 roku. Wraz z półbliźniaczym „Mecidiye” były jedynymi pełnowartościowymi krążownikami tureckimi przed I wojną światową. Uważany był za najaktywniejszy okręt floty osmańskiej. Zasłynął kilkumiesięcznym rajdem na Morzu Śródziemnym w 1913 roku podczas I wojny bałkańskiej, oprócz tego w czasie tej wojny i I wojny światowej działał głównie na Morzu Czarnym. Wycofany z czynnej służby w 1947 roku, został złomowany w latach 60. Czytaj więcej…
@@ -279,6 +272,9 @@
                         </div>
                     </div>
                     <iframe style="margin-top:60px" width="560" height="315" src="https://www.youtube.com/embed/3HTuROffxUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="col-12">
+                        <img class="margin_top clickable" src="assets\icons\x-icons.png" height="40" width="40" onclick="toggle_profession_description('informatyka')" />
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -297,7 +293,7 @@
             <div class="row">
                 <div class="text-center">
                     <h1 id="news_head">WSPÓŁRACE</h1>
-             
+
                 </div>
                 <div class="col-md-6 collab">
                     <img src="assets/wsp_cisco.png" class="zdj_wsp" />

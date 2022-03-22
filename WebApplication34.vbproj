@@ -144,6 +144,7 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\toggle_profession_description.js" />
     <Content Include="style\index.css" />
     <Content Include="Web.config" />
   </ItemGroup>
