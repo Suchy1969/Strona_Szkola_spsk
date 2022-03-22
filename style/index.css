@@ -7,6 +7,11 @@
     overflow: hidden;
 }
 
+button {
+    border: none;
+    background-color: transparent;
+}
+
 nav {
     display: grid;
     grid-template: 48px max-content / 10% 1fr 10%;
@@ -78,6 +83,10 @@ nav {
 
 .bg-light {
     background-color: white;
+}
+
+#profession-container {
+    margin-bottom: 80px;
 }
 
 .circle-border {
@@ -166,7 +175,6 @@ nav {
     color: #ffa100;
     text-align: center;
     font-size: 40px;
-    margin-top: 70px;
 }
 
 .collab {

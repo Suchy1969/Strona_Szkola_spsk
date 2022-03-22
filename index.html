@@ -12,7 +12,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <link href="style/index.css" rel="stylesheet" />
-    <script src="Scripts/toggle_profession_description.js"></script>
+    <script>
+        function scrollSmooth(id) {
+            let reqId = "#" + id;
+            window.scrollTo({
+                top: $(reqId).offset().top,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        function toggle_profession_description(profession) {
+            let allProfessions = document.getElementsByClassName("profession");
+
+            Array.from(allProfessions).forEach(el => {
+                console.log(el.id.split(' '));
+                if (el.id === profession) {
+                    if (el.style.display === "block") {
+                        el.style.display = "none";
+                    } else {
+                        el.style.display = "block";
+                        scrollSmooth(profession);
+                    }
+                } else {
+                    el.style.display = "none";
+                }
+            })
+        }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
 </head>
@@ -32,11 +59,10 @@
             <a class="nav-menu-element">REKRUTACJA</a>
         </div>
         <div class="nav-contact">
-            <a href="#contact-list"><img src="assets\icons\phone_icon.png" alt="ikona_telefon" /></a>
+            <button type="button" onclick="scrollSmooth('contact-list')"><img src="assets\icons\phone_icon.png" alt="ikona_telefon" /></button>
         </div>
     </nav>
     <main>
-
         <div class="container">
             <div class=" col-12 text-white head">
                 <h3>TECHNIKUM STOWARZYSZENIA PRZYJACIÓŁ SZKÓŁ KATOLICKICH W CZĘSTOCHOWIE</h3>
@@ -47,7 +73,7 @@
                     <img src="assets/luk.png" alt="zdjecie_luk" class="z-index" />
                 </div>
             </div>
-            <div class="row">
+            <div id="profession-container" class="row">
                 <div class="col-xs-12 col-sm-6  col-md-6 col-lg-3 flex_center">
                     <div class="circle-border margin_top_phones">
                         <svg viewBox="0 0 250 250">
@@ -61,7 +87,7 @@
                                 </textPath>
                             </text>
                         </svg>
-                        <img src="assets/kierunki/fryzjerstwo.png" class="photo_profession left_circle clickable" onclick="toggle_profession_description('fryzjerstwo')" alt="fryzjerstwo" />
+                        <img src="assets/kierunki/fryzjerstwo.png" onclick="toggle_profession_description('fryzjerstwo')" class="photo_profession left_circle clickable" alt="fryzjerstwo" />
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6  col-md-6 col-lg-3 margin_top margin_top_phones flex_center">
@@ -73,7 +99,7 @@
                                 </textPath>
                             </text>
                         </svg>
-                        <img src="assets/kierunki/grafika.png" class="photo_profession clickable" onclick="toggle_profession_description('grafika')" alt="grafik" />
+                        <img src="assets/kierunki/grafika.png" onclick="toggle_profession_description('grafika')" class="photo_profession clickable" alt="grafik" />
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6  col-md-6 col-lg-3  margin_top margin_top_phones flex_center">
@@ -101,7 +127,8 @@
                     </div>
                 </div>
             </div>
-            <div id="fryzjerstwo" class="profession row text-white collapse well" style="margin-top:50px">
+            <div id="profession-description-start"></div>
+            <div id="fryzjerstwo" class="profession row text-white collapse well">
                 <div class="col-12">
                     <h1>TECHNIK USŁUG FRYZJERSKICH</h1>
                     <h3 style="margin-top:50px">
@@ -142,7 +169,7 @@
                     </div>
                 </div>
             </div>
-            <div id="grafika collapseGrafika" class="profession row text-white collapse well" style="margin-top:50px">
+            <div id="grafika" class="profession row text-white collapse well">
                 <div class="col-12">
                     <h1>TECHNIK GRAFIKI I POLIGRAII CYFROWEJ</h1>
                     <h3 style="margin-top:50px">
@@ -191,7 +218,7 @@
                     </div>
                 </div>
             </div>
-            <div id="programowanie collapseProgramowanie" class="profession row text-white collapse well" style="margin-top:50px">
+            <div id="programowanie" class="profession row text-white collapse well">
                 <div class="col-12">
                     <h1>TECHNIK PROGRAMISTA</h1>
                     <h3 style="margin-top:50px">
@@ -236,7 +263,7 @@
                     </div>
                 </div>
             </div>
-            <div id="informatyka collapseInformatyka" class="profession row text-white collapse well" style="margin-top:50px">
+            <div id="informatyka" class="profession row text-white collapse well">
                 <div class="col-12">
                     <h1>TECHNIK INFORMATYK</h1>
                     <h3 style="margin-top:50px">
