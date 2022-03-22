@@ -200,8 +200,8 @@ nav {
         grid-column-gap: 24px;
     }
 
-    .w-60-max {
-        width: 60%;
+    .w-100-max {
+        width: 100%;
     }
 
     .nav-social, .nav-contact {
@@ -345,10 +345,11 @@ nav {
             height: 100%;
         }
 }
-@media only screen and (min-width: 600px) {
+@media  (min-width: 600px) {
     .iframe-container {
         position: relative;
         width: 100%;
+        padding-bottom: 56.25%;
         height: 0;
         display: flex;
         justify-content: center;
@@ -362,4 +363,7 @@ nav {
 }
 .head h{
     font-size:40px;
+}
+.margin_top_60{
+    margin-top:60px;
 }
