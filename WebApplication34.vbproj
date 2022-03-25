@@ -93,9 +93,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\icons\burger_icon.png" />
+    <Content Include="assets\icons\dot_fryzjerstwo.png" />
     <Content Include="assets\icons\facebook_icon.png" />
     <Content Include="assets\icons\instagram_icon.png" />
     <Content Include="assets\icons\phone_icon.png" />
+    <Content Include="assets\icons\spsk_small_icons.jpg" />
     <Content Include="assets\icons\x-icons.png" />
     <Content Include="assets\luk.png" />
     <Content Include="assets\polskikarnawal.jpg" />
