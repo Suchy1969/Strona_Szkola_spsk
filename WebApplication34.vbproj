@@ -101,6 +101,10 @@
     <Content Include="assets\icons\x-icons.png" />
     <Content Include="assets\luk.png" />
     <Content Include="assets\polskikarnawal.jpg" />
+    <Content Include="assets\prace_programisci\prace1.PNG" />
+    <Content Include="assets\prace_programisci\prace2.PNG" />
+    <Content Include="assets\prace_programisci\prace3.PNG" />
+    <Content Include="assets\prace_programisci\prace4.PNG" />
     <Content Include="assets\prace_uczniow\fryz1prac.jpg" />
     <Content Include="assets\prace_uczniow\fryz2prac.jpg" />
     <Content Include="assets\prace_uczniow\fryz3prac.jpg" />
