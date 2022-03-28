@@ -369,3 +369,7 @@ nav {
 .margin_top_60{
     margin-top:60px;
 }
+.border_white{
+    border:solid 2px white;
+    border-radius:100%;
+}
