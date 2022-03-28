@@ -298,6 +298,9 @@ nav {
     border: none;
     border-bottom: 1px solid white;
 }
+.well li{
+    list-style:inside;
+}
 
 .carousel-indicators {
     margin-left: auto;
@@ -372,4 +375,14 @@ nav {
 .border_white{
     border:solid 2px white;
     border-radius:100%;
+}
+main {
+    line-height: 35px;
+    font-size: 25px;
+}
+.font-size-25{
+    font-size:25px;
+}
+.both{
+    clear:both;
 }
