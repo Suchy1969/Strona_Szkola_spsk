@@ -4,10 +4,6 @@
     font-family: 'Ropa Sans', sans-serif;
 }
 
-.container {
-    overflow: hidden;
-}
-
 button {
     border: none;
     background-color: transparent;
@@ -41,8 +37,38 @@ nav {
     grid-area: 1 / 2 / 2 / 3;
     display: flex;
     justify-content: center;
-    align-items: center;
     font-size: 25px;
+}
+
+.nav-menu-item-wrapper {
+    height: max-content;
+    background-color: white;
+}
+
+.nav-menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    margin: 0 16px;
+}
+
+.nav-menu-item:not(:first-child) {
+    max-height: 0;
+    opacity: 0;
+    border-top: solid black 0;
+    transition: max-height .3s ease-out, opacity .2s ease-out, border .2s ease-out;
+}
+
+.nav-menu-item-wrapper:hover .nav-menu-item:not(:first-child) {
+    max-height: 48px;
+    opacity: 1;
+    border-top: solid black 1px;
+    transition: max-height .3s ease-out, opacity .8s ease-out, border .8s ease-out;
+}
+
+.nav-menu-item:not(:first-child):hover {
+    background-color: #f2f2f2;
 }
 
 .nav-contact {
@@ -73,12 +99,6 @@ nav {
     display: none;
     align-items: center;
     cursor: pointer;
-}
-
-.nav-menu-element {
-    display: flex;
-    justify-content: center;
-    margin: 0 16px;
 }
 
 .bg-light {
@@ -226,11 +246,11 @@ nav {
         align-items: center;
     }
 
-    .nav-menu-element {
+    .nav-menu-item {
         opacity: 0;
     }
 
-    .nav-menu-burger:hover ~ .nav-menu .nav-menu-element, .nav-menu:hover .nav-menu-element, .nav-menu-burger:active ~ .nav-menu .nav-menu-element, .nav-menu:active .nav-menu-element {
+    .nav-menu-burger:hover ~ .nav-menu .nav-menu-item, .nav-menu:hover .nav-menu-item, .nav-menu-burger:active ~ .nav-menu .nav-menu-item, .nav-menu:active .nav-menu-item {
         max-height: 48px;
         opacity: 1;
         transition: max-height .3s ease-out, opacity .8s ease-out;
@@ -243,15 +263,11 @@ nav {
         box-shadow: inset 0px 50px 30px -30px rgba(0,0,0,0.1);
     }
 
-    .nav-menu-element {
+    .nav-menu-item {
         width: 100%;
         max-height: 0;
         transition: max-height .3s ease-out, opacity .2s ease-out;
     }
-
-        .nav-menu-element:not(:first-child) {
-            clear: both;
-        }
 
     .nav-menu a:hover {
         background-color: #f2f2f2;
