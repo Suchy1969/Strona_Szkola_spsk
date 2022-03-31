@@ -1,6 +1,7 @@
 ﻿body {
     background-color: #404140;
     color: white;
+    font-family: 'Ropa Sans', sans-serif;
 }
 
 .container {
@@ -41,7 +42,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
+    font-size: 25px;
 }
 
 .nav-contact {
@@ -266,7 +267,7 @@ nav {
 }
 
 .zdj_wsp {
-    width: 65%;
+    width: 85%;
 }
 
 .bg-white {
@@ -279,7 +280,7 @@ nav {
 
 .footer_content {
     color: black;
-    font-family: 'Roboto', sans-serif;
+    
     font-size: 15px;
 }
 
@@ -315,9 +316,10 @@ nav {
 
 .head_info {
     margin-top: 60px;
-    color: green;
+    color: white;
     font-size: 40px;
-    font-family: 'Oswald', sans-serif;
+    
+    margin-bottom:60px;
 }
 
 .flex_center {
@@ -367,7 +369,7 @@ nav {
 }
 .head h {
     font-size: 40px;
-    font-family: 'Oswald', sans-serif;
+    
 }
 .margin_top_60{
     margin-top:60px;
@@ -385,4 +387,10 @@ main {
 }
 .both{
     clear:both;
+}
+p , .p{
+    font-size:20px;
+}
+.margin_bottom{
+    margin-bottom:30px;
 }
