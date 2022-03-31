@@ -118,11 +118,17 @@ nav {
     .circle-border img {
         margin-top: -108%;
     }
-.clickable  {
+
+.clickable {
     cursor: pointer;
     text-decoration: none;
     color: white;
 }
+
+    .clickable:hover {
+        text-decoration: none;
+        color: white;
+    }
 
 
 .circle-spsk {
@@ -295,7 +301,6 @@ nav {
 
 .footer_content {
     color: black;
-    
     font-size: 15px;
 }
 
@@ -314,9 +319,10 @@ nav {
     border: none;
     border-bottom: 1px solid white;
 }
-.well li{
-    list-style:inside;
-}
+
+    .well li {
+        list-style: inside;
+    }
 
 .carousel-indicators {
     margin-left: auto;
@@ -333,7 +339,7 @@ nav {
     margin-top: 60px;
     color: white;
     font-size: 36px;
-    margin-bottom:60px;
+    margin-bottom: 60px;
 }
 
 .flex_center {
@@ -386,29 +392,34 @@ nav {
 
 .head h {
     font-size: 40px;
-    
 }
 
 .margin_top_60 {
     margin-top: 60px;
 }
-.border_white{
-    border:solid 2px white;
-    border-radius:100%;
+
+.border_white {
+    border: solid 2px white;
+    border-radius: 100%;
 }
+
 main {
     line-height: 35px;
     font-size: 25px;
 }
-.font-size-25{
-    font-size:25px;
+
+.font-size-25 {
+    font-size: 25px;
 }
-.both{
-    clear:both;
+
+.both {
+    clear: both;
 }
-p , .p{
-    font-size:20px;
+
+p, .p {
+    font-size: 20px;
 }
-.margin_bottom{
-    margin-bottom:30px;
+
+.margin_bottom {
+    margin-bottom: 30px;
 }
