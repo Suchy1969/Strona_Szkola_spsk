@@ -115,10 +115,12 @@ nav {
     .circle-border img {
         margin-top: -108%;
     }
-
-.clickable {
+.clickable  {
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
+
 
 .circle-spsk {
     border-radius: 1000px;
