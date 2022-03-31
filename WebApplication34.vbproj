@@ -123,6 +123,7 @@
     <Content Include="assets\prace_graficy\zwierzetasylwiawyporska.jpg" />
     <Content Include="assets\bip_logo.png" />
     <Content Include="assets\wsp_cisco.png" />
+    <Content Include="assets\wsp_gliwice.png" />
     <Content Include="assets\wsp_pcz.png" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
