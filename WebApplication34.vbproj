@@ -101,6 +101,8 @@
     <Content Include="assets\icons\x-icons.png" />
     <Content Include="assets\luk.png" />
     <Content Include="assets\polskikarnawal.jpg" />
+    <Content Include="assets\prace_fryzjerzy\praca_3.png" />
+    <Content Include="assets\prace_fryzjerzy\praca_4.png" />
     <Content Include="assets\prace_fryzjerzy\praca_5.png" />
     <Content Include="assets\prace_fryzjerzy\praca_6.png" />
     <Content Include="assets\prace_programisci\prace1.PNG" />
@@ -125,6 +127,8 @@
     <Content Include="assets\wsp_cisco.png" />
     <Content Include="assets\wsp_gliwice.png" />
     <Content Include="assets\wsp_pcz.png" />
+    <Content Include="assets\wsp_wib.png" />
+    <Content Include="assets\wsp_wip.png" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
