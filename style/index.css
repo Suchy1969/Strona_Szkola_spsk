@@ -395,3 +395,13 @@ p , .p{
 .margin_bottom{
     margin-bottom:30px;
 }
+.develop li {
+    font-size: 15px;
+    opacity: 0.4;
+    font-weight: 100;
+    letter-spacing: 2px;
+    line-height: 13px;
+}
+.develop{
+padding-bottom:0px;
+}
