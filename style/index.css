@@ -2,6 +2,7 @@
     background-color: #404140;
     color: white;
     font-family: 'Ropa Sans', sans-serif;
+    
 }
 
 button {
@@ -19,6 +20,7 @@ nav {
     color: black;
     background-color: white;
     box-shadow: 0px 0px 30px 15px rgba(0,0,0,0.5);
+    
 }
 
     nav a, nav a:hover {
@@ -239,7 +241,9 @@ nav {
         grid-template: 48px max-content / 1fr 120px 1fr;
         grid-column-gap: 24px;
     }
-
+    #wspolpraca {
+        margin-top: 60px;
+    }
     .w-100-max {
         width: 100%;
     }
@@ -391,6 +395,7 @@ nav {
 
 
 @media only screen and (max-width: 600px) {
+   
     .iframe-container {
         position: relative;
         width: 100%;
@@ -443,6 +448,7 @@ nav {
 main {
     line-height: 35px;
     font-size: 25px;
+    overflow: hidden;
 }
 
 .font-size-25 {
